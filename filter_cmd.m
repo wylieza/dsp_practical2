@@ -15,4 +15,7 @@ title("Impulse Response of Difference Equation");
 xlabel("n");
 ylabel("Value of h(n)");
 
-print(gcf, '-dpng', 'handin2.png') %Save as png
+%print(gcf, '-dpng', 'handin2.png') %Save as png
+
+
+%stem(fft(h(n0offset+1:110))); %Shows the frequency response plot
