@@ -13,7 +13,7 @@ h = [h(1:L/2)*2/L, 2.-(h(L/2+1:L)*2/L)];
 subplot(2,1,1);
 plot(W, 20*log10(abs(H)));
 axis([0 2*pi]);
-ylim([-150, 50]);
+ylim([-120, 30]);
 title("Magnitude Plot");
 xlabel("Frquency W (rad/sample)");
 ylabel("Magnitude of H (dB)");
