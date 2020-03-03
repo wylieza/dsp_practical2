@@ -10,12 +10,13 @@ ddelta = [zeros(1, 10), 1, zeros(1, 100)]; %h over nE[-10, 100]
 
 h = filter(x_coeff, y_coeff, ddelta); %ff_coef, fb_coef, impulse
 
-stem(-10:100, h);
+plot(-10:100, h);
+axis([0, 100]);
 title("Impulse Response of Difference Equation");
 xlabel("n");
 ylabel("Value of h(n)");
 
-%print(gcf, '-dpng', 'handin2.png') %Save as png
+print(gcf, '-dpng', 'handin2.png') %Save as png
 
 
 %stem(fft(h(n0offset+1:110))); %Shows the frequency response plot

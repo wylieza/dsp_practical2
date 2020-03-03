@@ -1,3 +1,4 @@
+disp("Section 1");
 clear;
 
 b = [0.3, 0.6, 0.3]; %Coefficients of x[n] (2rd order)
