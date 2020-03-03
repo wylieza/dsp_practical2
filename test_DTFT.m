@@ -6,7 +6,7 @@ samples = 2000;
 
 [H, W] = DTFT(ones(1,L), samples);
 
-Hdb = 20*log(abs(H));
+Hdb = 20*log10(abs(H));
 Hang = angle(H);
 
 subplot(2,1,1);
