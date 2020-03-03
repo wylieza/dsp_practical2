@@ -6,13 +6,13 @@ samples = 2000;
 
 [H, W] = DTFT(ones(1,L), samples);
 
-Hdb = 20*log(abs(H));
+Hdb = 20*log10(abs(H));
 Hang = angle(H);
 
 subplot(2,1,1);
 plot(W, Hdb);
 axis([W(1), W(samples)]);
-ylim([-100, 80]);
+ylim([-100, 50]);
 title("Magnitude Plot");
 xlabel("Frquency W (rad/sample)");
 ylabel("Magnitude of H (dB)");

@@ -11,9 +11,9 @@ h = [h(1:L/2)*2/L, 2.-(h(L/2+1:L)*2/L)];
 [H, W] = DTFT(h, samples);
 
 subplot(2,1,1);
-plot(W, 20*log(abs(H)));
+plot(W, 20*log10(abs(H)));
 axis([0 2*pi]);
-ylim([-300, 100]);
+ylim([-150, 50]);
 title("Magnitude Plot");
 xlabel("Frquency W (rad/sample)");
 ylabel("Magnitude of H (dB)");
